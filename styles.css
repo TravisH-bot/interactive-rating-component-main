@@ -175,6 +175,21 @@ img {
 }
 
 .attribution {
-  margin-top: 5em;
+  margin-top: 2em;
   text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .main-container {
+    scale: 0.75;
+  }
+
+  .thank-you {
+    scale: 0.75;
+  }
+
+  .attribution {
+    margin-top: 1em;
+    text-align: center;
+  }
 }
