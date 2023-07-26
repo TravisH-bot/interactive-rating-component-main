@@ -15,7 +15,7 @@
 
   <!-- Rating state start -->
   <section class="main-container">
-    <div class="card">
+    <div class="card-one">
       <div class="star">
         <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -34,31 +34,63 @@
       </div>
 
       <section class="ratings">
-        <div id="circle" class="one">1</div>
-        <div id="circle" class="two">2</div>
-        <div id="circle" class="three">3</div>
-        <div id="circle" class="four">4</div>
-        <div id="circle" class="five">5</div>
+        <button id="circle" class="one">
+          <div>1</div>
+        </button>
+        <button id="circle" class="two">
+          <div>2</div>
+        </button>
+        <button id="circle" class="three">
+          <div>3</div>
+        </button>
+        <button id="circle" class="four">
+          <div>4</div>
+        </button>
+        <button id="circle" class="five">
+          <div>5</div>
+        </button>
+
       </section>
 
 
-      <button class="submit">Submit</button>
-
-      <!-- Rating state end -->
-
-      <!-- Thank you state start -->
-
-
-
-      <!-- Thank you state end -->
-
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      <button id="submit" class="submit-btn">Submit</button>
     </div>
   </section>
-  <script src="./script.js"></script>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section class="thank-you hidden">
+    <div class="card-two">
+      <div class="thank-you-img">
+        <img src="./images/illustration-thank-you.svg" alt="" srcset="">
+      </div>
+      <div class="selected-container">
+        <div class="selected">
+          <p class="selected-rating">You selected <!-- Add rating here --> out of 5</p>
+        </div>
+      </div>
+
+
+
+      <div class="card-title">Thank you!</div>
+      <div class="paragraph-two">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in
+        touch!
+      </div>
+      <button onclick="myClick()" id="rate-again" class="submit-btn">Rate Again</button>
+    </div>
+
+    <!-- Thank you state end -->
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/TravisH-bot">Travis H</a>.
+  </div>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>

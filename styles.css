@@ -36,7 +36,8 @@ body {
   font-family: var(--font);
 }
 
-.card {
+.card-one,
+.card-two {
   display: flex;
   flex-direction: column;
   width: 30em;
@@ -68,10 +69,15 @@ body {
   margin-bottom: 0.5em;
 }
 
-.paragraph-one {
+.paragraph-one,
+.paragraph-two {
   color: var(--medium-grey);
-  line-height: 1.5em;
+  line-height: 1.8em;
   font-weight: 400;
+}
+
+.paragraph-two {
+  margin-bottom: 1.5em;
 }
 
 .ratings {
@@ -81,12 +87,13 @@ body {
 }
 
 #circle {
+  border-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 3.5em;
-  height: 3.5em;
+  width: 4.5em;
+  height: 4.5em;
   background-color: var(--dark-blue);
   margin: 2em 0 2em 0;
   color: var(--medium-grey);
@@ -98,7 +105,55 @@ body {
   background-color: var(--orange);
 }
 
-.submit {
+#circle:focus {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+/* Thank you card */
+
+.thank-you {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.thank-you-img {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 8em;
+  width: 12em;
+}
+
+.selected-container {
+  display: flex;
+  justify-content: center;
+}
+
+.selected {
+  margin: 2em 0 2em 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  border-radius: 2em;
+  width: 14em;
+  height: 2.5em;
+}
+
+.selected-rating {
+  color: var(--orange);
+}
+
+.submit-btn {
   border-style: none;
   height: 4.5em;
   border-radius: 2em;
@@ -109,8 +164,17 @@ body {
   background-color: var(--orange);
 }
 
-.submit:hover {
+.submit-btn:hover {
   cursor: pointer;
   color: var(--orange);
   background-color: var(--white);
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  margin-top: 5em;
+  text-align: center;
 }
